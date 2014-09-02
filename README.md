@@ -28,3 +28,5 @@ module.exports = function(config) {
 I used
 [karma-slim-preprocessor](https://github.com/Scrimmage/karma-slim-preprocessor)
 as a model for this code.
+
+![Travis status](https://travis-ci.org/arkarkark/karma-cson-preprocessor.svg)
