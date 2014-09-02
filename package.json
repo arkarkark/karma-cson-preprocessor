@@ -16,6 +16,7 @@
     "karma-preprocessor",
     "cson",
     "json",
+    "coffee",
     "coffeescript"
   ],
   "author": "ark",
