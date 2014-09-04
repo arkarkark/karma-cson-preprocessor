@@ -5,7 +5,10 @@ createCsonPreprocessor = (logger) ->
   log = logger.create('preprocessor.cson')
   (content, file, done) ->
     log.debug('Processing \"%s\".', file.originalPath)
-    done(JSON.stringify(CSON.parse(content)))
+    try
+      done(JSON.stringify(CSON.parse(content)))
+    catch error
+      throw Error("in #{file.originalPath}\n#{error.toString()}")
 
 createCsonPreprocessor.$inject = ['logger']
 module.exports = createCsonPreprocessor

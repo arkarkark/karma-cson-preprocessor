@@ -1,6 +1,6 @@
 {
   "name": "karma-cson-preprocessor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Karma plugin. Compile cson files to json on the fly",
   "main": "lib/index.js",
   "scripts": {
