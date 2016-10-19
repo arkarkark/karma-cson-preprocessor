@@ -21,7 +21,7 @@
   ],
   "author": "ark",
   "dependencies": {
-    "cson-safe": ""
+    "cson-parser": ""
   },
   "devDependencies": {
     "grunt": "~0.4.1",
