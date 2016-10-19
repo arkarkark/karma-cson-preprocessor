@@ -1,5 +1,5 @@
 util = require('util')
-CSON = require('cson-safe')
+CSON = require('cson-parser')
 
 createCsonPreprocessor = (logger) ->
   log = logger.create('preprocessor.cson')
