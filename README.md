@@ -17,7 +17,7 @@ module.exports = function(config) {
 
     files: [
       '**/*.js',
-      '**/*.json,
+      '**/*.json',
     ]
   });
 };
