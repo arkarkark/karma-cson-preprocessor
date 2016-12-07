@@ -5,6 +5,7 @@ createCsonPreprocessor = (logger) ->
   log = logger.create('preprocessor.cson')
   (content, file, done) ->
     log.debug('Processing \"%s\".', file.originalPath)
+    file.path = file.originalPath.replace(/\.cson$/, '.json')
     try
       done(JSON.stringify(CSON.parse(content)))
     catch error
